@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5072478807823247177}
   - component: {fileID: 3671002342647691540}
   - component: {fileID: 3172289836639145621}
+  - component: {fileID: 7225205635429389406}
   m_Layer: 8
   m_Name: PowerPellet
   m_TagString: Untagged
@@ -101,3 +102,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &7225205635429389406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639964616957568796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8c13134a4b04d4690ae045dc8cf767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 50
+  duration: 8

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8309068338131396574
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 229227241814958100, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 890066300975009658, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b97167c35748db84fb4d32f4f242922a, type: 3}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054627, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054637, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_Name
+      value: Ghost_Pinky
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054638, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: initialDirection.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877697709847054639, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: initialBehaviour
+      value: 
+      objectReference: {fileID: 5156548273284731909}
+    - target: {fileID: 9108212728790839620, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.71000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108212728790839620, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9903333
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+--- !u!114 &5156548273284731909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3801039137038808027, guid: 7cdcd7bd332c65445baa697da7c7394c, type: 3}
+  m_PrefabInstance: {fileID: 8309068338131396574}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da063b46c07cda4e897b688d0cb6335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
