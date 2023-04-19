@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public Ghost[] ghosts;
     public Pacman pacman;
     public Transform pellets;
-    public AudioSource wakawak;
+    public AudioSource intro;
 
     public int score { get; private set;}
     public int lives { get; private set;}
@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        intro.Play();
         NewGame();
-        wakawak = GetComponent<AudioSource>();
     }
 
     private void NewGame()
@@ -99,18 +99,19 @@ public class GameManager : MonoBehaviour
     {
         SetScore(this.score + pellet.points);
         pellet.gameObject.SetActive(false);
-        wakawak.Play();
         if (!HasRemainningPellets())
         {
             Invoke(nameof(NewRound), 3.0f);
             this.pacman.gameObject.SetActive(false) ;
         }
-        wakawak.loop = true;
     }
 
     public void PowerPelletEaten(PowerPellet powerPellet)
     {
-        //TODO: Changing ghost state
+        for(int i = 0; i < this.ghosts.Length; i++)
+        {
+            this.ghosts[i].frightened.Enable(powerPellet.duration);
+        }
         
         PelletEaten(powerPellet);
         CancelInvoke();

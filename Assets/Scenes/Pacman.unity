@@ -227,11 +227,11 @@ PrefabInstance:
       objectReference: {fileID: 139523915}
     - target: {fileID: 5156548273284731909, guid: ddd06609874a90241a4442b15cda64fb, type: 3}
       propertyPath: duration
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6646104030450988088, guid: ddd06609874a90241a4442b15cda64fb, type: 3}
       propertyPath: duration
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddd06609874a90241a4442b15cda64fb, type: 3}
@@ -335,6 +335,10 @@ PrefabInstance:
     - target: {fileID: 4395207381232818346, guid: 94d11895ae1a29d47801fac512a30202, type: 3}
       propertyPath: m_Name
       value: Ghost_Plinky
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546356343246144097, guid: 94d11895ae1a29d47801fac512a30202, type: 3}
+      propertyPath: duration
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6290566090962707036, guid: 94d11895ae1a29d47801fac512a30202, type: 3}
       propertyPath: inside
@@ -10694,7 +10698,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 87155752478177592, guid: a97769e2e2d9aac408dfbc50f14599e3, type: 3}
       propertyPath: duration
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1909995197699135749, guid: a97769e2e2d9aac408dfbc50f14599e3, type: 3}
       propertyPath: inside
@@ -11625,13 +11629,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghosts:
-  - {fileID: 234118305}
   - {fileID: 2116136193}
+  - {fileID: 234118305}
   - {fileID: 59796168}
   - {fileID: 1482789335}
   pacman: {fileID: 961360263}
   pellets: {fileID: 302077290}
-  wakawak: {fileID: 2063964091}
+  intro: {fileID: 2063964091}
 --- !u!81 &2063964090
 AudioListener:
   m_ObjectHideFlags: 0
@@ -11647,14 +11651,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063964087}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b7a87316eb67a214f9f349453524dc75, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 12cd165a39b098341b45e669781c8527, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -11757,7 +11761,7 @@ PrefabInstance:
       objectReference: {fileID: 139523915}
     - target: {fileID: 1185923926284994818, guid: e863ea2c1d35d304c8388f79432819bd, type: 3}
       propertyPath: duration
-      value: 8
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8919171062707991540, guid: e863ea2c1d35d304c8388f79432819bd, type: 3}
       propertyPath: m_Name
