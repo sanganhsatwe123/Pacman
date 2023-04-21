@@ -246,6 +246,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a2a98f8248e654291ab9934ebd63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &59796169 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3187915225923317501, guid: ddd06609874a90241a4442b15cda64fb, type: 3}
+  m_PrefabInstance: {fileID: 59796167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &139523914
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a2a98f8248e654291ab9934ebd63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &234118306 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4395207381232818340, guid: 94d11895ae1a29d47801fac512a30202, type: 3}
+  m_PrefabInstance: {fileID: 234118304}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &294155917
 GameObject:
   m_ObjectHideFlags: 0
@@ -11356,6 +11366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a2a98f8248e654291ab9934ebd63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1482789336 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8157100669437912061, guid: a97769e2e2d9aac408dfbc50f14599e3, type: 3}
+  m_PrefabInstance: {fileID: 1482789334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1512711841
 GameObject:
   m_ObjectHideFlags: 0
@@ -12579,6 +12594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2063964088}
   - component: {fileID: 2063964089}
+  - component: {fileID: 2063964099}
   - component: {fileID: 2063964090}
   - component: {fileID: 2063964091}
   - component: {fileID: 2063964093}
@@ -13418,6 +13434,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2063964099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063964087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5dbe0ce8a0dc9449e5506ecdeac2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacman: {fileID: 961360262}
+  pellets: {fileID: 302077290}
+  ghosts:
+  - {fileID: 2116136194}
+  - {fileID: 234118306}
+  - {fileID: 59796169}
+  - {fileID: 1482789336}
+  score: {fileID: 2066505410}
 --- !u!1 &2066505408
 GameObject:
   m_ObjectHideFlags: 0
@@ -13645,3 +13681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a2a98f8248e654291ab9934ebd63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2116136194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8919171062707991546, guid: e863ea2c1d35d304c8388f79432819bd, type: 3}
+  m_PrefabInstance: {fileID: 2116136192}
+  m_PrefabAsset: {fileID: 0}

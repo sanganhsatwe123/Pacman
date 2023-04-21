@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     {
         intro.Play();
         NewGame();
+        highScoreT.text = PlayerPrefs.GetInt("HighScore").ToString();
     }
 
     private void NewGame()
@@ -66,12 +67,6 @@ public class GameManager : MonoBehaviour
         {
             NewGame();
         }
-        if(score > hiScore)
-        {
-            hiScore = score;
-            highScoreT.text = hiScore.ToString();
-        }
-        
     }
 
     private void ResetState()
@@ -97,13 +92,19 @@ public class GameManager : MonoBehaviour
         livesTxt.text = "0";
     }
 
-    private void SetScore(int score)
+    public void SetScore(int score)
     {
         this.score = score;
         Score.text = score.ToString();
+
+        if(score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+            highScoreT.text = score.ToString();
+        }
     }
 
-    private void SetLives(int lives)
+    public void SetLives(int lives)
     {
         this.lives = lives;
     }
