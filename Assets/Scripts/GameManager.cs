@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -18,6 +19,9 @@ public class GameManager : MonoBehaviour
     public AudioSource Gameover;
     public AudioSource pacmandeath;
     public int currentMunch = 0;
+    public GameObject MenuUI;
+
+    public bool GameIsPaused = false;
 
     public TMP_Text highScoreT;
     public TMP_Text Score;
@@ -67,6 +71,7 @@ public class GameManager : MonoBehaviour
         {
             NewGame();
         }
+        Menu();
     }
 
     private void ResetState()
@@ -88,7 +93,6 @@ public class GameManager : MonoBehaviour
         }
         this.pacman.gameObject.SetActive(false);
         Gameover.Play();
-        siren.Pause();
         livesTxt.text = "0";
     }
 
@@ -188,5 +192,34 @@ public class GameManager : MonoBehaviour
     private void ResetGhostMultiplier()
     {
         this.ghostMultiplier = 1; 
+    }
+
+    public void Menu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+    }
+
+    private void Pause()
+    {
+        MenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
+
+    private void Resume()
+    {
+        MenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
     }
 }
