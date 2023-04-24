@@ -3472,7 +3472,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2100323583}
         m_TargetAssemblyTypeName: SaveLoadGame, Assembly-CSharp
-        m_MethodName: Load
+        m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13218,7 +13218,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2100323583}
         m_TargetAssemblyTypeName: SaveLoadGame, Assembly-CSharp
-        m_MethodName: Save
+        m_MethodName: SaveGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
